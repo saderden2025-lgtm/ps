@@ -1,0 +1,50 @@
+PS赛事管理服务已启动:
+  管理端: http://localhost:5173
+  小程序API: http://192.168.220.1:3000/api
+  数据库: PostgreSQL (ps_game_hall)
+UpdateStatus error: error: 重复键违反唯一约束"uk_tournament_group"
+    at C:\Users\saderden\Desktop\ps\server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async initStandings (C:\Users\saderden\Desktop\ps\server\src\controllers\tournamentController.js:407:34)
+    at async exports.updateStatus (C:\Users\saderden\Desktop\ps\server\src\controllers\tournamentController.js:365:7) {
+  length: 201,
+  severity: '错误',
+  code: '23505',
+  detail: '键值"(tournament_id, name)=(1, A)" 已经存在',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'groups',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'uk_tournament_group',
+  file: 'nbtinsert.c',
+  line: '673',
+  routine: '_bt_check_unique'
+}
+UpdateStatus error: error: 重复键违反唯一约束"uk_tournament_group"
+    at C:\Users\saderden\Desktop\ps\server\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async initStandings (C:\Users\saderden\Desktop\ps\server\src\controllers\tournamentController.js:407:34)
+    at async exports.updateStatus (C:\Users\saderden\Desktop\ps\server\src\controllers\tournamentController.js:365:7) {
+  length: 201,
+  severity: '错误',
+  code: '23505',
+  detail: '键值"(tournament_id, name)=(1, A)" 已经存在',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'groups',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'uk_tournament_group',
+  file: 'nbtinsert.c',
+  line: '673',
+  routine: '_bt_check_unique'
+}
